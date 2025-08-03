@@ -26,9 +26,9 @@ const About = () => {
   }
 
   const personalInfo = [
-    { icon: MapPin, label: 'Location', value: 'Mumbai, India' },
+    { icon: MapPin, label: 'Location', value: 'Pune, India' },
     { icon: Phone, label: 'Phone', value: '+91 9766463015' },
-    { icon: Mail, label: 'Email', value: 'nikhil.salwe@email.com' },
+    { icon: Mail, label: 'Email', value: 'salwenikhil0724@gmail.com' },
     { icon: Calendar, label: 'Experience', value: '12+ Years' },
   ]
 

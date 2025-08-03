@@ -26,7 +26,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-white">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="container-custom text-center">
         <motion.div
           variants={containerVariants}
@@ -35,14 +35,14 @@ const Hero = () => {
         >
           <motion.h1 
             variants={itemVariants}
-            className="text-6xl lg:text-7xl font-bold mb-6 gradient-text"
+            className="text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent"
           >
             Nikhil Salwe
           </motion.h1>
           
           <motion.h2 
             variants={itemVariants}
-            className="text-2xl lg:text-3xl text-gray-600 mb-8"
+            className="text-2xl lg:text-3xl text-gray-700 mb-8 font-medium"
           >
             Software Architect
           </motion.h2>
@@ -62,14 +62,15 @@ const Hero = () => {
           >
             <a
               href="#contact"
-              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors flex items-center justify-center space-x-2"
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <Mail className="w-5 h-5" />
               <span>Get In Touch</span>
             </a>
             <a
-              href="#"
-              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors flex items-center justify-center space-x-2"
+              href="/Nikhil Salwe - Architect Resume.pdf"
+              download
+              className="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <Download className="w-5 h-5" />
               <span>Download Resume</span>
@@ -84,7 +85,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/nikhil-salwe-526a5335/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors"
+              className="text-gray-600 hover:text-indigo-600 transition-colors duration-300 transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
@@ -93,7 +94,7 @@ const Hero = () => {
               href="https://github.com/Nikhilsalwe"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors"
+              className="text-gray-600 hover:text-indigo-600 transition-colors duration-300 transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="w-6 h-6" />

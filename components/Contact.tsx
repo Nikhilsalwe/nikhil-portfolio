@@ -29,8 +29,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'nikhil.salwe@email.com',
-      link: 'mailto:nikhil.salwe@email.com'
+      value: 'salwenikhil0724@gmail.com',
+      link: 'mailto:salwenikhil0724@gmail.com'
     },
     {
       icon: Phone,
@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Mumbai, India',
+      value: 'Pune, India',
       link: null
     }
   ]
@@ -58,12 +58,6 @@ const Contact = () => {
       label: 'GitHub',
       link: 'https://github.com/Nikhilsalwe',
       color: 'hover:text-gray-800'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      link: '#',
-      color: 'hover:text-blue-400'
     }
   ]
 
@@ -142,8 +136,8 @@ const Contact = () => {
                 </p>
                 <div className="pt-4">
                   <a
-                    href="mailto:nikhil.salwe@email.com"
-                    className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+                    href="mailto:salwenikhil0724@gmail.com"
+                    className="btn-primary inline-flex items-center"
                   >
                     <Mail className="w-5 h-5 mr-2" />
                     Send Message
