@@ -13,6 +13,15 @@
     font-family: 'Inter', sans-serif;
     background-color: #fafafa;
     color: #1f2937;
+    /* Performance optimizations */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Optimize animations */
+  * {
+    box-sizing: border-box;
   }
 }
 

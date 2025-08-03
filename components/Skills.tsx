@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Code, Palette, Users, Lightbulb } from 'lucide-react'
 
 const Skills = () => {
@@ -76,22 +76,22 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding bg-white">
       <div className="container-custom">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <m.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 gradient-text">Technical Skills</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Comprehensive expertise in modern web technologies, AI/ML, and software architecture
             </p>
-          </motion.div>
+          </m.div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
-              <motion.div
+              <m.div
                 key={index}
                 variants={itemVariants}
                 className="bg-gray-50 rounded-lg p-6 card-hover"
@@ -108,7 +108,7 @@ const Skills = () => {
                         <span className="text-sm text-gray-500">{skill.level}%</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
-                        <motion.div
+                        <m.div
                           className="bg-primary-600 h-2 rounded-full"
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
@@ -119,11 +119,11 @@ const Skills = () => {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
 
-          <motion.div variants={itemVariants} className="mt-12 bg-primary-50 rounded-lg p-8">
+          <m.div variants={itemVariants} className="mt-12 bg-primary-50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-primary-800 mb-6 text-center">Key Achievements</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg p-4 text-center">
@@ -139,8 +139,8 @@ const Skills = () => {
                 <p className="text-sm text-gray-600">Promoted from Project Lead to Architect at Persistent Systems</p>
               </div>
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { User, MapPin, Phone, Mail, Calendar } from 'lucide-react'
 
 const About = () => {
@@ -35,14 +35,14 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container-custom">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className="grid lg:grid-cols-2 gap-12 items-center"
         >
-          <motion.div variants={itemVariants}>
+          <m.div variants={itemVariants}>
             <h2 className="text-4xl font-bold mb-8 gradient-text">Professional Summary</h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
@@ -58,9 +58,9 @@ const About = () => {
                 and LLMs.
               </p>
             </div>
-          </motion.div>
+          </m.div>
 
-          <motion.div variants={itemVariants} className="space-y-6">
+          <m.div variants={itemVariants} className="space-y-6">
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Personal Information</h3>
               <div className="space-y-4">
@@ -97,8 +97,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
+import { m } from 'framer-motion'
+import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react'
 
 const Contact = () => {
   const containerVariants = {
@@ -64,22 +64,22 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-custom">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <m.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 gradient-text">Get In Touch</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               I'm always open to discussing new opportunities, interesting projects, 
               and innovative ideas. Feel free to reach out!
             </p>
-          </motion.div>
+          </m.div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            <motion.div variants={itemVariants}>
+            <m.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-800 mb-8">Contact Information</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
@@ -121,9 +121,9 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </m.div>
 
-            <motion.div variants={itemVariants} className="bg-gray-50 rounded-lg p-8">
+            <m.div variants={itemVariants} className="bg-gray-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Let's Connect</h3>
               <div className="space-y-4 text-gray-700">
                 <p>
@@ -144,9 +144,9 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   )

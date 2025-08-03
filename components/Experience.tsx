@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Calendar, MapPin, Building } from 'lucide-react'
 
 const Experience = () => {
@@ -101,22 +101,22 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding bg-gray-50">
       <div className="container-custom">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <m.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 gradient-text">Work Experience</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Over 12 years of progressive experience in software development and architecture
             </p>
-          </motion.div>
+          </m.div>
 
           <div className="space-y-8">
             {experiences.map((experience, index) => (
-              <motion.div
+              <m.div
                 key={index}
                 variants={itemVariants}
                 className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 card-hover"
@@ -148,10 +148,10 @@ const Experience = () => {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   )

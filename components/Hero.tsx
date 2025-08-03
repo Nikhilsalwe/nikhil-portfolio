@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Download, Mail, Linkedin, Github } from 'lucide-react'
 
 const Hero = () => {
@@ -28,35 +28,35 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="container-custom text-center">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 
+          <m.h1 
             variants={itemVariants}
             className="text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent"
           >
             Nikhil Salwe
-          </motion.h1>
+          </m.h1>
           
-          <motion.h2 
+          <m.h2 
             variants={itemVariants}
             className="text-2xl lg:text-3xl text-gray-700 mb-8 font-medium"
           >
             Software Architect
-          </motion.h2>
+          </m.h2>
           
-          <motion.p 
+          <m.p 
             variants={itemVariants}
             className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
             Seasoned Software Architect with over 12 years of experience in designing, developing, 
             and delivering scalable and high-performance web applications. Currently leading frontend 
             architecture and development at Persistent Systems for the TaxSlayer project.
-          </motion.p>
+          </m.p>
           
-          <motion.div 
+          <m.div 
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
@@ -75,9 +75,9 @@ const Hero = () => {
               <Download className="w-5 h-5" />
               <span>Download Resume</span>
             </a>
-          </motion.div>
+          </m.div>
           
-          <motion.div 
+          <m.div 
             variants={itemVariants}
             className="flex justify-center space-x-6"
           >
@@ -99,8 +99,8 @@ const Hero = () => {
             >
               <Github className="w-6 h-6" />
             </a>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   )

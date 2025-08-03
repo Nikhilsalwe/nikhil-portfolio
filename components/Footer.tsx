@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Heart, ArrowUp } from 'lucide-react'
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
             <p className="text-gray-300 text-sm">
               Made with <Heart className="inline w-4 h-4 text-red-500" /> in India
             </p>
-            <motion.button
+            <m.button
               onClick={scrollToTop}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -30,7 +30,7 @@ const Footer = () => {
               aria-label="Scroll to top"
             >
               <ArrowUp className="w-5 h-5" />
-            </motion.button>
+            </m.button>
           </div>
         </div>
       </div>

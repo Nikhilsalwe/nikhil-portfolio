@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react'
 
 const Education = () => {
@@ -64,21 +64,21 @@ const Education = () => {
   return (
     <section id="education" className="section-padding bg-gray-50">
       <div className="container-custom">
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <m.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 gradient-text">Education & Certifications</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Academic foundation and professional achievements
             </p>
-          </motion.div>
+          </m.div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            <motion.div variants={itemVariants}>
+            <m.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center">
                 <GraduationCap className="w-6 h-6 text-primary-600 mr-3" />
                 Academic Background
@@ -113,9 +113,9 @@ const Education = () => {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
 
-            <motion.div variants={itemVariants}>
+            <m.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center">
                 <Award className="w-6 h-6 text-primary-600 mr-3" />
                 Professional Achievements
@@ -137,9 +137,9 @@ const Education = () => {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   )
